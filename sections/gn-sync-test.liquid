@@ -1,6 +1,5 @@
 <style>
   #shopify-section-{{ section.id }} .gn-practice-system {
-    position: relative;
     background: {{ section.settings.background_color | default: '#f2eee3' }};
     padding: {{ section.settings.padding_top | default: 60 }}px 32px {{ section.settings.padding_bottom | default: 70 }}px;
   }
@@ -24,72 +23,13 @@
     letter-spacing: -0.01em;
     color: {{ section.settings.heading_color | default: '#161615' }};
   }
-  #shopify-section-{{ section.id }} .gn-practice-system__stage-wrap {
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    margin-left: -50vw;
-    margin-top: {{ section.settings.stage_spacing | default: 64 }}px;
+  #shopify-section-{{ section.id }} .gn-practice-system__image {
+    margin-top: {{ section.settings.image_spacing | default: 40 }}px;
   }
-  #shopify-section-{{ section.id }} .gn-practice-system__shelf {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: {{ section.settings.shelf_height | default: 40 }}px;
-    background: {{ section.settings.shelf_color | default: '#cec5b1' }};
-    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.08) inset;
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__products {
-    position: relative;
-    z-index: 1;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: {{ section.settings.product_gap | default: 48 }}px;
-    height: {{ section.settings.image_height | default: 300 }}px;
-    padding: 0 32px;
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__product {
-    flex: 1 1 0;
-    min-width: 0;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__product img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
+  #shopify-section-{{ section.id }} .gn-practice-system__image img {
+    display: block;
+    width: 100%;
     height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 18px 14px rgba(0, 0, 0, 0.22));
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__labels {
-    display: flex;
-    justify-content: center;
-    gap: {{ section.settings.product_gap | default: 48 }}px;
-    max-width: 1100px;
-    margin: 20px auto 0;
-    padding: 0 32px;
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__label {
-    flex: 1 1 0;
-    min-width: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: {{ section.settings.label_color | default: '#161615' }};
-  }
-  #shopify-section-{{ section.id }} .gn-practice-system__label a {
-    color: inherit;
-    text-decoration: none;
   }
   #shopify-section-{{ section.id }} .gn-practice-system__cta {
     display: flex;
@@ -121,18 +61,6 @@
     #shopify-section-{{ section.id }} .gn-practice-system__heading {
       font-size: 2rem;
     }
-    #shopify-section-{{ section.id }} .gn-practice-system__products {
-      height: {{ section.settings.image_height | default: 300 | times: 0.6 }}px;
-      gap: 16px;
-      padding: 0 16px;
-    }
-    #shopify-section-{{ section.id }} .gn-practice-system__labels {
-      gap: 16px;
-      padding: 0 16px;
-    }
-    #shopify-section-{{ section.id }} .gn-practice-system__label {
-      font-size: 0.7rem;
-    }
   }
 </style>
 
@@ -144,45 +72,22 @@
     {%- if section.settings.heading != blank -%}
       <h2 class="gn-practice-system__heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
-  </div>
 
-  <div class="gn-practice-system__stage-wrap">
-    <div class="gn-practice-system__shelf"></div>
-    <div class="gn-practice-system__products">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'tool' -%}
-          <div class="gn-practice-system__product" {{ block.shopify_attributes }}>
-            {%- if block.settings.image != blank -%}
-              {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy' }}
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      {%- endfor -%}
+    {%- if section.settings.image != blank -%}
+    <div class="gn-practice-system__image">
+      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 1100px, 100vw' }}
     </div>
-  </div>
+    {%- endif -%}
 
-  <div class="gn-practice-system__labels">
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'tool' -%}
-        <p class="gn-practice-system__label">
-          {%- if block.settings.product_link != blank -%}
-            <a href="{{ block.settings.product_link }}">{{ block.settings.label }}</a>
-          {%- else -%}
-            {{ block.settings.label }}
-          {%- endif -%}
-        </p>
-      {%- endif -%}
-    {%- endfor -%}
+    {%- if section.settings.button_text != blank -%}
+    <div class="gn-practice-system__cta">
+      <a href="{{ section.settings.button_link | default: '#' }}" class="gn-practice-system__button">
+        {{ section.settings.button_text }}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    {%- endif -%}
   </div>
-
-  {%- if section.settings.button_text != blank -%}
-  <div class="gn-practice-system__cta">
-    <a href="{{ section.settings.button_link | default: '#' }}" class="gn-practice-system__button">
-      {{ section.settings.button_text }}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-    </a>
-  </div>
-  {%- endif -%}
 </div>
 
 {% schema %}
@@ -192,45 +97,23 @@
   "settings": [
     { "type": "text", "id": "eyebrow_text", "label": "Eyebrow text", "default": "The practice system" },
     { "type": "richtext", "id": "heading", "label": "Heading", "default": "<p>Four tools.<br>One better practice.</p>" },
+    { "type": "header", "content": "Image" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "range", "id": "image_spacing", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Space above image", "default": 40 },
     { "type": "header", "content": "Button" },
     { "type": "text", "id": "button_text", "label": "Button label", "default": "Explore the system" },
     { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "range", "id": "cta_spacing", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Space above button", "default": 40 },
     { "type": "header", "content": "Colors" },
     { "type": "color", "id": "background_color", "label": "Background color", "default": "#f2eee3" },
     { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#161615" },
-    { "type": "color", "id": "label_color", "label": "Product label color", "default": "#161615" },
     { "type": "color", "id": "accent_color", "label": "Accent color (eyebrow, button)", "default": "#e0531f" },
-    { "type": "color", "id": "shelf_color", "label": "Shelf color", "default": "#cec5b1" },
     { "type": "header", "content": "Layout" },
-    { "type": "range", "id": "image_height", "min": 160, "max": 420, "step": 10, "unit": "px", "label": "Product image height", "default": 300 },
-    { "type": "range", "id": "shelf_height", "min": 10, "max": 100, "step": 2, "unit": "px", "label": "Shelf height", "default": 40 },
-    { "type": "range", "id": "product_gap", "min": 8, "max": 100, "step": 4, "unit": "px", "label": "Space between products", "default": 48 },
-    { "type": "range", "id": "stage_spacing", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Space above products", "default": 64 },
-    { "type": "range", "id": "cta_spacing", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Space above button", "default": 40 },
     { "type": "range", "id": "padding_top", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Top padding", "default": 60 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Bottom padding", "default": 70 }
   ],
-  "blocks": [
-    {
-      "type": "tool",
-      "name": "Tool",
-      "settings": [
-        { "type": "image_picker", "id": "image", "label": "Product image" },
-        { "type": "text", "id": "label", "label": "Product label", "default": "TOOL NAME" },
-        { "type": "url", "id": "product_link", "label": "Product link" }
-      ]
-    }
-  ],
   "presets": [
-    {
-      "name": "Practice system showcase",
-      "blocks": [
-        { "type": "tool", "settings": { "label": "ARC ONE" } },
-        { "type": "tool", "settings": { "label": "TRACE MAT" } },
-        { "type": "tool", "settings": { "label": "LINE TOOL" } },
-        { "type": "tool", "settings": { "label": "LINK BAND" } }
-      ]
-    }
+    { "name": "Practice system showcase" }
   ]
 }
 {% endschema %}
