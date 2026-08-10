@@ -1,16 +1,49 @@
 <style>
   #shopify-section-{{ section.id }} .gn-flagship-banner {
+    position: relative;
+    overflow: hidden;
     background-color: {{ section.settings.background_color | default: '#1d3d2a' }};
     color: {{ section.settings.text_color | default: '#ffffff' }};
+    min-height: {{ section.settings.min_height | default: 520 }}px;
+    display: flex;
+    align-items: center;
     padding: {{ section.settings.padding_top | default: 70 }}px 32px {{ section.settings.padding_bottom | default: 70 }}px;
   }
+  #shopify-section-{{ section.id }} .gn-flagship-banner__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  #shopify-section-{{ section.id }} .gn-flagship-banner__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  #shopify-section-{{ section.id }} .gn-flagship-banner__bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: rgba(0, 0, 0, {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }});
+  }
   #shopify-section-{{ section.id }} .gn-flagship-banner__inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(300px, 440px) 1fr;
     gap: 56px;
     align-items: center;
+    height: 100%;
+  }
+  #shopify-section-{{ section.id }} .gn-flagship-banner__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   #shopify-section-{{ section.id }} .gn-flagship-banner__eyebrow {
     margin: 0 0 14px;
@@ -129,16 +162,35 @@
     width: 9px;
     height: 9px;
   }
+  #shopify-section-{{ section.id }} .gn-flagship-banner__media {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #shopify-section-{{ section.id }} .gn-flagship-banner__media img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
-    border-radius: 12px;
+    object-fit: contain;
   }
   @media (max-width: 900px) {
+    #shopify-section-{{ section.id }} .gn-flagship-banner {
+      min-height: auto;
+    }
     #shopify-section-{{ section.id }} .gn-flagship-banner__inner {
       grid-template-columns: 1fr;
       gap: 32px;
+      height: auto;
+    }
+    #shopify-section-{{ section.id }} .gn-flagship-banner__content {
+      height: auto;
+    }
+    #shopify-section-{{ section.id }} .gn-flagship-banner__media {
+      height: 320px;
     }
     #shopify-section-{{ section.id }} .gn-flagship-banner__heading {
       font-size: 2.75rem;
@@ -150,6 +202,12 @@
 </style>
 
 <div class="gn-flagship-banner">
+  {%- if section.settings.background_image != blank -%}
+  <div class="gn-flagship-banner__bg">
+    {{ section.settings.background_image | image_url: width: 2000 | image_tag: loading: 'lazy', sizes: '100vw' }}
+  </div>
+  <div class="gn-flagship-banner__bg-overlay"></div>
+  {%- endif -%}
   <div class="gn-flagship-banner__inner">
     <div class="gn-flagship-banner__content">
       {%- if section.settings.eyebrow_text != blank -%}
@@ -216,7 +274,7 @@
 
     {%- if section.settings.image != blank -%}
     <div class="gn-flagship-banner__media">
-      {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 600px, 100vw' }}
+      {{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 900px, 100vw' }}
     </div>
     {%- endif -%}
   </div>
@@ -233,6 +291,9 @@
     { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Hear the moment sequence becomes release." },
     { "type": "header", "content": "Image" },
     { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "header", "content": "Background" },
+    { "type": "image_picker", "id": "background_image", "label": "Background image" },
+    { "type": "range", "id": "overlay_opacity", "min": 0, "max": 90, "step": 5, "unit": "%", "label": "Background image darkness", "default": 0 },
     { "type": "header", "content": "Button" },
     { "type": "text", "id": "button_text", "label": "Button label", "default": "Shop ARC ONE" },
     { "type": "url", "id": "button_link", "label": "Button link" },
@@ -244,6 +305,7 @@
     { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#ec7901" },
     { "type": "color", "id": "text_color", "label": "Text color", "default": "#ffffff" },
     { "type": "header", "content": "Layout" },
+    { "type": "range", "id": "min_height", "min": 320, "max": 800, "step": 10, "unit": "px", "label": "Minimum height (desktop)", "default": 520 },
     { "type": "range", "id": "padding_top", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Top padding", "default": 70 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Bottom padding", "default": 70 }
   ],
