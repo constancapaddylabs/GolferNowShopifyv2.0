@@ -473,6 +473,10 @@
         "padding_bottom": 70
       }
     },
+    "1786368900c46d78da": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "featured_collection_tabs_RNrbH6": {
       "type": "featured-collection-tabs",
       "blocks": {
@@ -1854,6 +1858,7 @@
     "text_icons1_gn",
     "gn_flagship_trainer_banner_PeGFNi",
     "gn_method_steps_yrATw8",
+    "1786368900c46d78da",
     "featured_collection_tabs_RNrbH6",
     "media_about_gn",
     "media_story_gn",
