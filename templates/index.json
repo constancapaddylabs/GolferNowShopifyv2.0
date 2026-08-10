@@ -346,6 +346,76 @@
         "color_media_dots": "rgba(0,0,0,0)"
       }
     },
+    "gn_method_steps_yrATw8": {
+      "type": "gn-method-steps",
+      "blocks": {
+        "step_QPT7dX": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "CONNECT",
+            "image": "shopify://shop_images/Firefly_foto_deste_produto_com_melhor_qualidade_nao_mudes_nada_quero_o_produto_igual_84219.png",
+            "product_name": "LINK ONE",
+            "product_link": "shopify://products/golf-training-belt",
+            "description": "Build connection and awareness."
+          }
+        },
+        "step_fBPiGP": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "SEQUENCE",
+            "image": "shopify://shop_images/Firefly.png",
+            "product_name": "ARC ONE",
+            "product_link": "shopify://products/pro-swing-click-trainer",
+            "description": "Groove the sequence. Hear the release."
+          }
+        },
+        "step_nQAdd3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "STRIKE",
+            "image": "shopify://shop_images/Firefly_foto_deste_produto_com_melhor_qualidade_nao_mudes_nada_quero_o_produto_igual_66709.png",
+            "product_name": "TRACE ONE",
+            "product_link": "shopify://products/golf-putting-tutor",
+            "description": "Find center. Control low point."
+          }
+        },
+        "step_jifTN6": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "label": "ROLL",
+            "image": "shopify://shop_images/Firefly_foto_deste_produto_com_melhor_qualidade_nao_mudes_nada_quero_o_produto_igual_354254.png",
+            "product_name": "LINE ONE",
+            "product_link": "shopify://products/swing-detection-training-mat",
+            "description": "Start it on line. Build better rolls."
+          }
+        }
+      },
+      "block_order": [
+        "step_QPT7dX",
+        "step_fBPiGP",
+        "step_nQAdd3",
+        "step_jifTN6"
+      ],
+      "name": "Product method steps",
+      "settings": {
+        "heading": "<p>One method. <em>Four</em> feedback loops.</p>",
+        "background_color": "#f5f1e8",
+        "heading_color": "#182b20",
+        "label_color": "#182b20",
+        "text_color": "#4a4a44",
+        "accent_color": "#1D3D2A",
+        "divider_color": "#d8d3c4",
+        "image_height": 170,
+        "divider_gap": 56,
+        "heading_spacing": 56,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
     "gn_flagship_trainer_banner_PeGFNi": {
       "type": "gn-flagship-trainer-banner",
       "blocks": {
@@ -389,7 +459,7 @@
         "feature_CPHFez"
       ],
       "custom_css": [
-        ".gn-flagship-banner{padding-left: 100px; padding-right: 100px;}"
+        ".gn-flagship-banner {padding-left: 100px; padding-right: 100px;}"
       ],
       "name": "Flagship trainer banner",
       "settings": {
@@ -397,86 +467,41 @@
         "heading": "ARC ONE",
         "subheading": "Hear the moment sequence becomes release.",
         "image": "shopify://shop_images/Firefly.png",
+        "background_image": "shopify://shop_images/pexels-anntarazevich-6370119.jpg",
+        "overlay_opacity": 85,
         "button_text": "Shop ARC ONE",
         "button_link": "",
         "secondary_text": "",
         "secondary_link": "",
-        "background_color": "#1D3D2A",
-        "accent_color": "#4D846E",
+        "background_color": "#1d3d2a",
+        "accent_color": "#4d846e",
         "text_color": "#f5f3ec",
+        "min_height": 520,
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "gn_method_steps_yrATw8": {
-      "type": "gn-method-steps",
-      "blocks": {
-        "step_QPT7dX": {
-          "type": "step",
-          "settings": {
-            "number": "01",
-            "label": "CONNECT",
-            "product_name": "LINK ONE",
-            "product_link": "",
-            "description": "Build connection and awareness."
-          }
-        },
-        "step_fBPiGP": {
-          "type": "step",
-          "settings": {
-            "number": "02",
-            "label": "SEQUENCE",
-            "product_name": "ARC ONE",
-            "product_link": "",
-            "description": "Groove the sequence. Hear the release."
-          }
-        },
-        "step_nQAdd3": {
-          "type": "step",
-          "settings": {
-            "number": "03",
-            "label": "STRIKE",
-            "product_name": "TRACE ONE",
-            "product_link": "",
-            "description": "Find center. Control low point."
-          }
-        },
-        "step_jifTN6": {
-          "type": "step",
-          "settings": {
-            "number": "04",
-            "label": "ROLL",
-            "product_name": "LINE ONE",
-            "product_link": "",
-            "description": "Start it on line. Build better rolls."
-          }
-        }
-      },
-      "block_order": [
-        "step_QPT7dX",
-        "step_fBPiGP",
-        "step_nQAdd3",
-        "step_jifTN6"
-      ],
-      "name": "Product method steps",
-      "settings": {
-        "heading": "<p>One method. <em>Four</em> feedback loops.</p>",
-        "background_color": "#f5f1e8",
-        "heading_color": "#182b20",
-        "label_color": "#182b20",
-        "text_color": "#4a4a44",
-        "accent_color": "#e0531f",
-        "divider_color": "#d8d3c4",
-        "image_height": 170,
-        "divider_gap": 56,
-        "heading_spacing": 56,
-        "padding_top": 70,
-        "padding_bottom": 70
       }
     },
     "1786368900c46d78da": {
       "type": "_blocks",
       "settings": {}
+    },
+    "gn_sync_test_8RYXP6": {
+      "type": "gn-sync-test",
+      "name": "Practice system showcase",
+      "settings": {
+        "eyebrow_text": "The practice system",
+        "heading": "<p>Four tools.<br/>One better practice.</p>",
+        "image": "shopify://shop_images/Firefly_remove_o_texto_do_topo_784212_1.png",
+        "image_spacing": 40,
+        "button_text": "Explore the system",
+        "button_link": "",
+        "cta_spacing": 40,
+        "background_color": "#f2eee3",
+        "heading_color": "#161615",
+        "accent_color": "#1D3D2A",
+        "padding_top": 60,
+        "padding_bottom": 70
+      }
     },
     "featured_collection_tabs_RNrbH6": {
       "type": "featured-collection-tabs",
@@ -494,6 +519,7 @@
       "block_order": [
         "tab_VBYGcA"
       ],
+      "disabled": true,
       "name": "t:names.featured_collection_tabs",
       "settings": {
         "main_subheading": "",
@@ -1857,9 +1883,10 @@
     "slider_hero_gn",
     "slider_playbetter_gn",
     "text_icons1_gn",
-    "gn_flagship_trainer_banner_PeGFNi",
     "gn_method_steps_yrATw8",
+    "gn_flagship_trainer_banner_PeGFNi",
     "1786368900c46d78da",
+    "gn_sync_test_8RYXP6",
     "featured_collection_tabs_RNrbH6",
     "media_about_gn",
     "media_story_gn",
