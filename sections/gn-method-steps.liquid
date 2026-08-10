@@ -2,7 +2,7 @@
   #shopify-section-{{ section.id }} .gn-method-steps {
     --gn-method-header-height: 60px;
     --gn-method-image-height: {{ section.settings.image_height | default: 170 }}px;
-    background: {{ section.settings.background_color | default: '#f5f1e8' }};
+    background: {{ section.settings.background_color | default: '#e8e9e6' }};
     padding: {{ section.settings.padding_top | default: 70 }}px 32px {{ section.settings.padding_bottom | default: 70 }}px;
   }
   #shopify-section-{{ section.id }} .gn-method-steps__heading {
@@ -11,7 +11,7 @@
     text-align: center;
     font-size: 2.6rem;
     line-height: 1.25;
-    color: {{ section.settings.heading_color | default: '#182b20' }};
+    color: {{ section.settings.heading_color | default: '#464646' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__heading em {
     font-style: italic;
@@ -32,7 +32,7 @@
     margin: 0 0 4px;
     font-size: 0.8rem;
     font-weight: 700;
-    color: {{ section.settings.accent_color | default: '#e0531f' }};
+    color: {{ section.settings.accent_color | default: '#ec7901' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__label {
     margin: 0;
@@ -40,7 +40,7 @@
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.04em;
-    color: {{ section.settings.label_color | default: '#182b20' }};
+    color: {{ section.settings.label_color | default: '#464646' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__image {
     display: flex;
@@ -61,7 +61,7 @@
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: {{ section.settings.label_color | default: '#182b20' }};
+    color: {{ section.settings.label_color | default: '#464646' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__name a {
     color: inherit;
@@ -72,7 +72,8 @@
     max-width: 190px;
     font-size: 0.9rem;
     line-height: 1.4;
-    color: {{ section.settings.text_color | default: '#4a4a44' }};
+    color: {{ section.settings.text_color | default: '#464646' }};
+    opacity: 0.8;
   }
   #shopify-section-{{ section.id }} .gn-method-steps__divider {
     position: relative;
@@ -87,7 +88,7 @@
     bottom: 0;
     width: 1px;
     transform: translateX(-50%);
-    background: {{ section.settings.divider_color | default: '#d8d3c4' }};
+    background: {{ section.settings.divider_color | default: '#d2d3cc' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__divider-arrow {
     position: absolute;
@@ -99,8 +100,8 @@
     justify-content: center;
     width: 26px;
     height: 26px;
-    background: {{ section.settings.background_color | default: '#f5f1e8' }};
-    color: {{ section.settings.accent_color | default: '#e0531f' }};
+    background: {{ section.settings.background_color | default: '#e8e9e6' }};
+    color: {{ section.settings.accent_color | default: '#ec7901' }};
   }
   #shopify-section-{{ section.id }} .gn-method-steps__divider-arrow svg {
     width: 20px;
@@ -188,12 +189,12 @@
   "settings": [
     { "type": "richtext", "id": "heading", "label": "Heading", "default": "<p>One method. <em>Four</em> feedback loops.</p>" },
     { "type": "header", "content": "Colors" },
-    { "type": "color", "id": "background_color", "label": "Background color", "default": "#f5f1e8" },
-    { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#182b20" },
-    { "type": "color", "id": "label_color", "label": "Step label / product name color", "default": "#182b20" },
-    { "type": "color", "id": "text_color", "label": "Description text color", "default": "#4a4a44" },
-    { "type": "color", "id": "accent_color", "label": "Accent color (step number, arrows)", "default": "#e0531f" },
-    { "type": "color", "id": "divider_color", "label": "Divider line color", "default": "#d8d3c4" },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#e8e9e6" },
+    { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#464646" },
+    { "type": "color", "id": "label_color", "label": "Step label / product name color", "default": "#464646" },
+    { "type": "color", "id": "text_color", "label": "Description text color", "default": "#464646" },
+    { "type": "color", "id": "accent_color", "label": "Accent color (step number, arrows)", "default": "#ec7901" },
+    { "type": "color", "id": "divider_color", "label": "Divider line color", "default": "#d2d3cc" },
     { "type": "header", "content": "Layout" },
     { "type": "range", "id": "image_height", "min": 100, "max": 300, "step": 10, "unit": "px", "label": "Image height", "default": 170 },
     { "type": "range", "id": "divider_gap", "min": 24, "max": 100, "step": 4, "unit": "px", "label": "Space between columns", "default": 56 },

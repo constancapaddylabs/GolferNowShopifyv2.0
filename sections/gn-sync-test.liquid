@@ -1,6 +1,6 @@
 <style>
   #shopify-section-{{ section.id }} .gn-practice-system {
-    background: {{ section.settings.background_color | default: '#f2eee3' }};
+    background: {{ section.settings.background_color | default: '#e8e9e6' }};
     padding: {{ section.settings.padding_top | default: 60 }}px 32px {{ section.settings.padding_bottom | default: 70 }}px;
   }
   #shopify-section-{{ section.id }} .gn-practice-system__inner {
@@ -13,7 +13,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: {{ section.settings.accent_color | default: '#e0531f' }};
+    color: {{ section.settings.accent_color | default: '#ec7901' }};
   }
   #shopify-section-{{ section.id }} .gn-practice-system__heading {
     margin: 0;
@@ -21,7 +21,7 @@
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: -0.01em;
-    color: {{ section.settings.heading_color | default: '#161615' }};
+    color: {{ section.settings.heading_color | default: '#464646' }};
   }
   #shopify-section-{{ section.id }} .gn-practice-system__image {
     margin-top: {{ section.settings.image_spacing | default: 40 }}px;
@@ -42,7 +42,7 @@
     gap: 10px;
     padding: 16px 30px;
     border-radius: 6px;
-    background: {{ section.settings.accent_color | default: '#e0531f' }};
+    background: {{ section.settings.accent_color | default: '#ec7901' }};
     color: #ffffff;
     font-weight: 700;
     font-size: 0.95rem;
@@ -105,9 +105,9 @@
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "range", "id": "cta_spacing", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Space above button", "default": 40 },
     { "type": "header", "content": "Colors" },
-    { "type": "color", "id": "background_color", "label": "Background color", "default": "#f2eee3" },
-    { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#161615" },
-    { "type": "color", "id": "accent_color", "label": "Accent color (eyebrow, button)", "default": "#e0531f" },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#e8e9e6" },
+    { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#464646" },
+    { "type": "color", "id": "accent_color", "label": "Accent color (eyebrow, button)", "default": "#ec7901" },
     { "type": "header", "content": "Layout" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Top padding", "default": 60 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Bottom padding", "default": 70 }
