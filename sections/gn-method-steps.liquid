@@ -9,8 +9,6 @@
     margin: 0 auto {{ section.settings.heading_spacing | default: 56 }}px;
     max-width: 780px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.25;
     color: {{ section.settings.heading_color | default: '#182b20' }};
@@ -139,7 +137,7 @@
 
 <div class="gn-method-steps">
   {%- if section.settings.heading != blank -%}
-    <div class="gn-method-steps__heading">{{ section.settings.heading }}</div>
+    <h2 class="gn-method-steps__heading">{{ section.settings.heading }}</h2>
   {%- endif -%}
 
   <div class="gn-method-steps__grid">
