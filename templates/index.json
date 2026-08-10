@@ -388,21 +388,22 @@
         "feature_D6Xadk",
         "feature_CPHFez"
       ],
+      "custom_css": [
+        ".gn-flagship-banner{padding-left: 100px; padding-right: 100px;}"
+      ],
       "name": "Flagship trainer banner",
       "settings": {
         "eyebrow_text": "Our flagship trainer",
         "heading": "ARC ONE",
         "subheading": "Hear the moment sequence becomes release.",
+        "image": "shopify://shop_images/Firefly.png",
         "button_text": "Shop ARC ONE",
         "button_link": "",
         "secondary_text": "",
         "secondary_link": "",
-        "image_position": "right",
-        "overlay_opacity": 45,
-        "background_color": "#182b20",
-        "accent_color": "#e0531f",
+        "background_color": "#1D3D2A",
+        "accent_color": "#4D846E",
         "text_color": "#f5f3ec",
-        "min_height": 460,
         "padding_top": 60,
         "padding_bottom": 60
       }
