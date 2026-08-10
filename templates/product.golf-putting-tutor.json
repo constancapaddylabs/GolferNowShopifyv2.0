@@ -1,0 +1,480 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "review_1": {
+          "type": "review",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {}
+        },
+        "countdown_1": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Don't miss out! Your offer ends in"
+          }
+        },
+        "inventory_1": {
+          "type": "inventory",
+          "settings": {
+            "inventory": 6
+          }
+        },
+        "benefits_1": {
+          "type": "text",
+          "settings": {
+            "icon_name_1": "check",
+            "content_1": "<p><strong>Instant Feedback To Improve Your Stroke</strong></p>",
+            "icon_name_2": "check",
+            "content_2": "<p><strong>Builds Consistent Putting Mechanics</strong></p>",
+            "icon_name_3": "check",
+            "content_3": "<p><strong>Trains Accuracy From Any Distance</strong></p>",
+            "icon_name_4": "check",
+            "content_4": "<p><strong>Compact Design, Practice Anywhere</strong></p>",
+            "icon_name_5": "check",
+            "content_5": "<p><strong>Loved By Golfers Of Every Skill Level</strong></p>"
+          }
+        },
+        "description_1": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"body2\">{{ product.description }}</div>"
+          }
+        },
+        "variant_picker_1": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "trust_icons_1": {
+          "type": "text",
+          "settings": {
+            "icon_name_1": "truck",
+            "content_1": "<p>Free shipping</p>",
+            "icon_name_2": "return",
+            "content_2": "<p>Easy returns</p>",
+            "icon_name_3": "chat",
+            "content_3": "<p>Support 24/7</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_1",
+        "review_1",
+        "price_1",
+        "countdown_1",
+        "inventory_1",
+        "benefits_1",
+        "description_1",
+        "variant_picker_1",
+        "buy_buttons_1",
+        "trust_icons_1"
+      ]
+    },
+    "marquee_1": {
+      "type": "gradient-marquee",
+      "settings": {
+        "gradient_style": "custom",
+        "speed": 22,
+        "font_size": 22,
+        "padding_y": 20,
+        "gradient_color_1": "#1d3d2a",
+        "gradient_color_2": "#1d3d2a",
+        "gradient_color_3": "#1d3d2a"
+      },
+      "blocks": {
+        "m1": {
+          "type": "message",
+          "settings": {
+            "text": "Consistency",
+            "show_icon": true,
+            "custom_image": ""
+          }
+        },
+        "m2": {
+          "type": "message",
+          "settings": {
+            "text": "Power",
+            "show_icon": true,
+            "custom_image": ""
+          }
+        },
+        "m3": {
+          "type": "message",
+          "settings": {
+            "text": "Timing",
+            "show_icon": true,
+            "custom_image": ""
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3"
+      ]
+    },
+    "comparison_gn": {
+      "type": "gn-comparison-table",
+      "settings": {
+        "heading": "Sets the Standard",
+        "brand_name": "Golfer Now",
+        "others_label": "Others",
+        "center_image": ""
+      },
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Instant Audible Feedback",
+            "brand_check": true,
+            "others_check": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Stops Early Release",
+            "brand_check": true,
+            "others_check": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Anti-Slip Rubber Grip",
+            "brand_check": true,
+            "others_check": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Corrects Posture",
+            "brand_check": true,
+            "others_check": false
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Builds Muscle Memory",
+            "brand_check": true,
+            "others_check": false
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "feature_text": "Practice Anywhere",
+            "brand_check": true,
+            "others_check": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ]
+    },
+    "features_3col": {
+      "type": "text-columns-with-icons-type-1",
+      "settings": {
+        "main_subheading": "",
+        "main_heading": "Engineered for the Swing That Wins More Holes",
+        "main_desc": "",
+        "heading_aligment": "text-center",
+        "grid": "page-grid-3",
+        "grid_tablet": "page-grid-st-3",
+        "text_align": "text-left",
+        "background": "color",
+        "color_background": "#f2f0e6"
+      },
+      "blocks": {
+        "f1": {
+          "type": "item",
+          "settings": {
+            "card_image": "",
+            "show_icon": "none",
+            "block_heading": "Anti-Slip Natural Rubber Grip",
+            "block_text": "<p>Engineered for control on every swing.</p>",
+            "button_name": ""
+          }
+        },
+        "f2": {
+          "type": "item",
+          "settings": {
+            "card_image": "",
+            "show_icon": "none",
+            "block_heading": "The Click That Trains Your Timing",
+            "block_text": "<p>Hear it the moment you get it right.</p>",
+            "button_name": ""
+          }
+        },
+        "f3": {
+          "type": "item",
+          "settings": {
+            "card_image": "",
+            "show_icon": "none",
+            "block_heading": "Built for Every Practice Session",
+            "block_text": "<p>Compact and durable, ready whenever you are.</p>",
+            "button_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3"
+      ]
+    },
+    "marquee_2": {
+      "type": "gradient-marquee",
+      "settings": {
+        "gradient_style": "custom",
+        "speed": 18,
+        "font_size": 18,
+        "padding_y": 14,
+        "gradient_color_1": "#1d3d2a",
+        "gradient_color_2": "#1d3d2a",
+        "gradient_color_3": "#1d3d2a"
+      },
+      "blocks": {
+        "m1": {
+          "type": "message",
+          "settings": {
+            "text": "Become a pro",
+            "show_icon": false
+          }
+        },
+        "m2": {
+          "type": "message",
+          "settings": {
+            "text": "Increase your performance",
+            "show_icon": false
+          }
+        },
+        "m3": {
+          "type": "message",
+          "settings": {
+            "text": "Effortless Power",
+            "show_icon": false
+          }
+        },
+        "m4": {
+          "type": "message",
+          "settings": {
+            "text": "Instant Feedback",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ]
+    },
+    "video_gn": {
+      "type": "slider",
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-fullwidth",
+        "image_size": "fixed",
+        "desktop_image_height": 500,
+        "image_size_mobile": "fixed",
+        "mobile_image_height": 380,
+        "desktop_navigation": "none",
+        "mobile_navigation": "none",
+        "autoplay_enabled": false
+      },
+      "blocks": {
+        "v1": {
+          "type": "banner",
+          "settings": {
+            "content_type": "video",
+            "image": "",
+            "video_url": "",
+            "video_slide_mode": "autoplay_muted",
+            "heading_text": "",
+            "desc": "",
+            "button_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "v1"
+      ]
+    },
+    "review_gn": {
+      "type": "wokiee-review",
+      "settings": {
+        "swipe": true,
+        "grid": "page-grid-md-1 page-grid-lg-1 page-grid-1",
+        "grid_tablet": "page-grid-st-1",
+        "desktop_navigation": "dots",
+        "mobile_navigation": "dots",
+        "heading_aligment": "text-left",
+        "background": "color",
+        "color_background": "#f2f0e6"
+      },
+      "blocks": {
+        "rev1": {
+          "type": "item",
+          "settings": {
+            "show_image": "show",
+            "image": "",
+            "showstars": true,
+            "rating": 5,
+            "review_date": "24/10/2025",
+            "heading_text": "I heard the click on day three. My putting changed that week.",
+            "desc": "I've struggled with a consistent stroke for years. Within three days of using the Golf Putting Tutor, I could actually feel the difference between a good stroke and a bad one. By the end of the week I was draining putts I used to miss.",
+            "author": "Mark T.",
+            "author_description": "Weekend Golfer",
+            "reply_heading": "",
+            "reply_text": "<p>That's exactly what it's designed for, Mark — turning feel into something you can actually see. Keep practicing!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rev1"
+      ]
+    },
+    "promo_collage": {
+      "type": "gn-promo-collage-cta",
+      "settings": {
+        "heading": "Your Best Round Starts With One Putt",
+        "description": "<p>Train smarter. Putt with confidence. Score lower.</p>",
+        "price_text": "",
+        "button_text": "Get the Putting Tutor",
+        "button_link": "",
+        "image_1": "",
+        "image_2": "",
+        "image_3": ""
+      }
+    },
+    "faq_gn": {
+      "type": "ss-simple-faq",
+      "settings": {
+        "kicker": "Got Questions?",
+        "heading": "Frequently Asked Questions",
+        "section_background_color": "#1a1a1a"
+      },
+      "blocks": {
+        "q1": {
+          "type": "text",
+          "settings": {
+            "question": "How does the putting tutor actually work?",
+            "answer": "<p>It gives you real-time feedback on your stroke path and face angle so you can feel the correction instantly, without needing a coach on hand.</p>"
+          }
+        },
+        "q2": {
+          "type": "text",
+          "settings": {
+            "question": "Does it work on any putting surface?",
+            "answer": "<p>Yes — it works on carpet, practice mats, and real greens alike.</p>"
+          }
+        },
+        "q3": {
+          "type": "text",
+          "settings": {
+            "question": "Is it suitable for beginners?",
+            "answer": "<p>Absolutely. It’s designed to help golfers of every skill level build a more consistent stroke.</p>"
+          }
+        },
+        "q4": {
+          "type": "text",
+          "settings": {
+            "question": "What's included in the kit?",
+            "answer": "<p>The putting tutor unit, a carry pouch, and a quick-start guide.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ]
+    },
+    "guarantee_3col": {
+      "type": "text-columns-with-icons-type-1",
+      "settings": {
+        "main_subheading": "",
+        "main_heading": "Golfer Now Guarantee",
+        "main_desc": "",
+        "heading_aligment": "text-center",
+        "grid": "page-grid-3",
+        "grid_tablet": "page-grid-st-3",
+        "text_align": "text-center",
+        "background": "color",
+        "color_background": "#f2f0e6",
+        "show_icon_box": false
+      },
+      "blocks": {
+        "g1": {
+          "type": "item",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "truck",
+            "block_heading": "Secure shipping",
+            "block_text": "<p>Order today, receive tomorrow</p>",
+            "button_name": ""
+          }
+        },
+        "g2": {
+          "type": "item",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "box",
+            "block_heading": "Satisfaction guaranteed",
+            "block_text": "<p>Flexible returns for your peace of mind</p>",
+            "button_name": ""
+          }
+        },
+        "g3": {
+          "type": "item",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "chat",
+            "block_heading": "Fast customer support",
+            "block_text": "<p>Our support team is ready every day of the week</p>",
+            "button_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "marquee_1",
+    "comparison_gn",
+    "features_3col",
+    "marquee_2",
+    "video_gn",
+    "review_gn",
+    "promo_collage",
+    "faq_gn",
+    "guarantee_3col"
+  ]
+}
