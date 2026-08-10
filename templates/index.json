@@ -346,6 +346,124 @@
         "color_media_dots": "rgba(0,0,0,0)"
       }
     },
+    "gn_flagship_trainer_banner_PeGFNi": {
+      "type": "gn-flagship-trainer-banner",
+      "blocks": {
+        "feature_4Pm4pg": {
+          "type": "feature",
+          "settings": {
+            "icon": "sound",
+            "title": "Audible feedback",
+            "description": "The click confirms correct sequence."
+          }
+        },
+        "feature_D6Xadk": {
+          "type": "feature",
+          "settings": {
+            "icon": "chart",
+            "title": "Immediate data",
+            "description": "Feel it right away. Adjust faster."
+          }
+        },
+        "feature_CPHFez": {
+          "type": "feature",
+          "settings": {
+            "icon": "check",
+            "title": "Built for repetition",
+            "description": "Durable, balanced and tour tough."
+          }
+        }
+      },
+      "block_order": [
+        "feature_4Pm4pg",
+        "feature_D6Xadk",
+        "feature_CPHFez"
+      ],
+      "name": "Flagship trainer banner",
+      "settings": {
+        "eyebrow_text": "Our flagship trainer",
+        "heading": "ARC ONE",
+        "subheading": "Hear the moment sequence becomes release.",
+        "button_text": "Shop ARC ONE",
+        "button_link": "",
+        "secondary_text": "Learn how it works",
+        "secondary_link": "",
+        "image_position": "right",
+        "overlay_opacity": 45,
+        "background_color": "#182b20",
+        "accent_color": "#e0531f",
+        "text_color": "#f5f3ec",
+        "min_height": 460,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "gn_method_steps_yrATw8": {
+      "type": "gn-method-steps",
+      "blocks": {
+        "step_QPT7dX": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "CONNECT",
+            "product_name": "LINK ONE",
+            "product_link": "",
+            "description": "Build connection and awareness."
+          }
+        },
+        "step_fBPiGP": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "SEQUENCE",
+            "product_name": "ARC ONE",
+            "product_link": "",
+            "description": "Groove the sequence. Hear the release."
+          }
+        },
+        "step_nQAdd3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "STRIKE",
+            "product_name": "TRACE ONE",
+            "product_link": "",
+            "description": "Find center. Control low point."
+          }
+        },
+        "step_jifTN6": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "label": "ROLL",
+            "product_name": "LINE ONE",
+            "product_link": "",
+            "description": "Start it on line. Build better rolls."
+          }
+        }
+      },
+      "block_order": [
+        "step_QPT7dX",
+        "step_fBPiGP",
+        "step_nQAdd3",
+        "step_jifTN6"
+      ],
+      "name": "Product method steps",
+      "settings": {
+        "heading": "<p>One method. <em>Four</em> feedback loops.</p>",
+        "background_color": "#f5f1e8",
+        "heading_color": "#182b20",
+        "label_color": "#182b20",
+        "text_color": "#4a4a44",
+        "accent_color": "#e0531f",
+        "divider_color": "#d8d3c4",
+        "image_height": 170,
+        "divider_gap": 56,
+        "heading_spacing": 56,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
     "featured_collection_tabs_RNrbH6": {
       "type": "featured-collection-tabs",
       "blocks": {
@@ -1578,7 +1696,10 @@
             "desc": "I was skeptical about the newest launch monitor, but the data I got from the Golfer Now model was precise and immediately actionable. My consistency off the tee has dramatically improved. A genuinely high-value piece of kit.",
             "author": "— Lucas M",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         },
         "item_pzcfyn": {
@@ -1591,7 +1712,10 @@
             "desc": "I only get out on Saturdays, so I need gear that's simple. Their GPS watch is a game-changer—no fuss, just accurate yardages and a great interface. Makes the round so much more enjoyable!",
             "author": "— Sophie N",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         },
         "item_ApCiEf": {
@@ -1604,7 +1728,10 @@
             "desc": "As someone who plays seriously, I look for quality that lasts. The rangefinder I bought here is robust, fast, and $100 less than the 'big brand' equivalent. Excellent value for tournament-level gear.",
             "author": "— James L",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         },
         "item_x9g4hh": {
@@ -1617,7 +1744,10 @@
             "desc": "I know nothing about golf, but my husband does! The site's descriptions made it easy to choose a fantastic swing trainer for his birthday. It arrived quickly and he hasn't stopped using it. Great customer service, great gift ideas!",
             "author": "— Rachel T",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         },
         "item_GPe7zK": {
@@ -1630,7 +1760,10 @@
             "desc": "I always thought gadgets were gimmicky, but I finally caved and bought a putting aid from Golfer Now. Within two sessions, I cut three-putts by half. Totally unexpected, massive difference to my short game.",
             "author": "— Franklin V",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         },
         "item_xGtEq6": {
@@ -1643,7 +1776,10 @@
             "desc": "This is my third purchase from Golfer Now, and they consistently deliver the cutting edge. Their curated selection means I don't waste time sifting through junk. My first stop for all new golf tech.",
             "author": "— David P",
             "author_description": "",
-            "url": ""
+            "url": "",
+            "review_date": "",
+            "reply_heading": "",
+            "reply_text": ""
           }
         }
       },
@@ -1707,6 +1843,8 @@
     "slider_hero_gn",
     "slider_playbetter_gn",
     "text_icons1_gn",
+    "gn_flagship_trainer_banner_PeGFNi",
+    "gn_method_steps_yrATw8",
     "featured_collection_tabs_RNrbH6",
     "media_about_gn",
     "media_story_gn",
