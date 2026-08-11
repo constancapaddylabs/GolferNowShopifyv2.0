@@ -407,7 +407,7 @@
         "heading_color": "#182b20",
         "label_color": "#182b20",
         "text_color": "#4a4a44",
-        "accent_color": "#1D3D2A",
+        "accent_color": "#1d3d2a",
         "divider_color": "#d8d3c4",
         "image_height": 170,
         "divider_gap": 56,
@@ -498,7 +498,64 @@
         "cta_spacing": 40,
         "background_color": "#f2eee3",
         "heading_color": "#161615",
+        "accent_color": "#1d3d2a",
+        "padding_top": 60,
+        "padding_bottom": 70
+      }
+    },
+    "gn_bundle_comparison_4iyWbm": {
+      "type": "gn-bundle-comparison",
+      "blocks": {
+        "tier_BbEQiP": {
+          "type": "tier",
+          "settings": {
+            "highlighted": false,
+            "badge_text": "Recommended",
+            "title": "ARC ONE",
+            "subtitle": "Flagship trainer only.",
+            "button_text": "Explore ARC ONE",
+            "button_link": ""
+          }
+        },
+        "tier_9BpNGz": {
+          "type": "tier",
+          "settings": {
+            "highlighted": true,
+            "badge_text": "Recommended",
+            "title": "THE SWING SYSTEM",
+            "subtitle": "LINK ONE + ARC ONE + TRACE ONE",
+            "button_text": "Explore the Swing System",
+            "button_link": ""
+          }
+        },
+        "tier_F4BnxD": {
+          "type": "tier",
+          "settings": {
+            "highlighted": false,
+            "badge_text": "Recommended",
+            "title": "THE COMPLETE SYSTEM",
+            "subtitle": "All four tools.",
+            "button_text": "Explore the Complete System",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "tier_BbEQiP",
+        "tier_9BpNGz",
+        "tier_F4BnxD"
+      ],
+      "name": "Bundle comparison",
+      "settings": {
+        "heading": "Choose your system.",
+        "background_color": "#F1EEE4",
+        "heading_color": "#464646",
+        "text_color": "#767671",
         "accent_color": "#1D3D2A",
+        "divider_color": "#d2d3cc",
+        "highlight_border_color": "#1D3D2A",
+        "image_height": 150,
+        "heading_spacing": 48,
         "padding_top": 60,
         "padding_bottom": 70
       }
@@ -953,6 +1010,66 @@
         "color_media_icon": "rgba(0,0,0,0)",
         "color_media_background_hover": "rgba(0,0,0,0)",
         "color_media_icon_hover": "rgba(0,0,0,0)"
+      }
+    },
+    "gn_golf_content_feed_HG6ymF": {
+      "type": "gn-golf-content-feed",
+      "blocks": {
+        "card_wzpkJE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/pexels-mickhaupt-5644639.jpg",
+            "badge_text": "5m read",
+            "title": "The Best Part of Golf Isn't the Score",
+            "description": "Why the moments between shots often matter more than the number on the card.",
+            "link": ""
+          }
+        },
+        "card_BPwFdx": {
+          "type": "card",
+          "settings": {
+            "badge_text": "4m read",
+            "title": "Building a Pre-Round Routine That Actually Works",
+            "description": "Five minutes at the mat can change your entire round.",
+            "link": ""
+          }
+        },
+        "card_qbbtny": {
+          "type": "card",
+          "settings": {
+            "badge_text": "3m read",
+            "title": "Why Clean Clubs Change Your Contact",
+            "description": "A dirty face costs you more spin and distance than you think.",
+            "link": ""
+          }
+        },
+        "card_RVwDH7": {
+          "type": "card",
+          "settings": {
+            "badge_text": "6m read",
+            "title": "Practice Reps vs. Real Rounds: What Actually Transfers",
+            "description": "The drills that translate to the course, and the ones that don't.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_wzpkJE",
+        "card_BPwFdx",
+        "card_qbbtny",
+        "card_RVwDH7"
+      ],
+      "name": "Golf content feed",
+      "settings": {
+        "heading": "Stay up-to-date with everything about golf and better practice.",
+        "background_color": "#ffffff",
+        "heading_color": "#464646",
+        "accent_color": "#1d3d2a",
+        "divider_color": "#e8e9e6",
+        "card_height": 520,
+        "expand_ratio": 3,
+        "padding_top": 50,
+        "padding_bottom": 60
       }
     },
     "media_checklist_gn": {
@@ -1542,6 +1659,7 @@
         "banner_m8NxU6",
         "banner_JCFEc3"
       ],
+      "disabled": true,
       "name": "t:names.banners_collage",
       "settings": {
         "main_subheading": "",
@@ -1887,10 +2005,12 @@
     "gn_flagship_trainer_banner_PeGFNi",
     "1786368900c46d78da",
     "gn_sync_test_8RYXP6",
+    "gn_bundle_comparison_4iyWbm",
     "featured_collection_tabs_RNrbH6",
     "media_about_gn",
     "media_story_gn",
     "media_parallax_gn",
+    "gn_golf_content_feed_HG6ymF",
     "media_checklist_gn",
     "slider_promo_gn",
     "text_columns_with_icons_type_2_MNGP3n",
