@@ -467,6 +467,8 @@
         "heading": "ARC ONE",
         "subheading": "Hear the moment sequence becomes release.",
         "image": "shopify://shop_images/Firefly.png",
+        "enable_pulse": true,
+        "pulse_speed": 2.5,
         "background_image": "shopify://shop_images/pexels-anntarazevich-6370119.jpg",
         "overlay_opacity": 85,
         "button_text": "Shop ARC ONE",
@@ -513,6 +515,7 @@
             "badge_text": "Recommended",
             "title": "ARC ONE",
             "subtitle": "Flagship trainer only.",
+            "image_1": "shopify://shop_images/1produ.png",
             "button_text": "Explore ARC ONE",
             "button_link": ""
           }
@@ -524,6 +527,7 @@
             "badge_text": "Recommended",
             "title": "THE SWING SYSTEM",
             "subtitle": "LINK ONE + ARC ONE + TRACE ONE",
+            "image_1": "shopify://shop_images/Firefly_1.png",
             "button_text": "Explore the Swing System",
             "button_link": ""
           }
@@ -535,6 +539,7 @@
             "badge_text": "Recommended",
             "title": "THE COMPLETE SYSTEM",
             "subtitle": "All four tools.",
+            "image_1": "shopify://shop_images/4prod.png",
             "button_text": "Explore the Complete System",
             "button_link": ""
           }
@@ -548,12 +553,12 @@
       "name": "Bundle comparison",
       "settings": {
         "heading": "Choose your system.",
-        "background_color": "#F1EEE4",
+        "background_color": "#f1eee4",
         "heading_color": "#464646",
         "text_color": "#767671",
-        "accent_color": "#1D3D2A",
+        "accent_color": "#1d3d2a",
         "divider_color": "#d2d3cc",
-        "highlight_border_color": "#1D3D2A",
+        "highlight_border_color": "#1d3d2a",
         "image_height": 150,
         "heading_spacing": 48,
         "padding_top": 60,
@@ -1019,7 +1024,6 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/pexels-mickhaupt-5644639.jpg",
-            "badge_text": "5m read",
             "title": "The Best Part of Golf Isn't the Score",
             "description": "Why the moments between shots often matter more than the number on the card.",
             "link": ""
@@ -1028,7 +1032,6 @@
         "card_BPwFdx": {
           "type": "card",
           "settings": {
-            "badge_text": "4m read",
             "title": "Building a Pre-Round Routine That Actually Works",
             "description": "Five minutes at the mat can change your entire round.",
             "link": ""
@@ -1037,7 +1040,6 @@
         "card_qbbtny": {
           "type": "card",
           "settings": {
-            "badge_text": "3m read",
             "title": "Why Clean Clubs Change Your Contact",
             "description": "A dirty face costs you more spin and distance than you think.",
             "link": ""
@@ -1046,7 +1048,6 @@
         "card_RVwDH7": {
           "type": "card",
           "settings": {
-            "badge_text": "6m read",
             "title": "Practice Reps vs. Real Rounds: What Actually Transfers",
             "description": "The drills that translate to the course, and the ones that don't.",
             "link": ""
@@ -1064,6 +1065,7 @@
         "heading": "Stay up-to-date with everything about golf and better practice.",
         "background_color": "#ffffff",
         "heading_color": "#464646",
+        "card_text_color": "#ffffff",
         "accent_color": "#1d3d2a",
         "divider_color": "#e8e9e6",
         "card_height": 520,
