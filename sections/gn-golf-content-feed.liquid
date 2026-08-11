@@ -84,7 +84,7 @@
     inset: auto 0 0 0;
     padding: 24px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.75) 100%);
-    color: #ffffff;
+    color: {{ section.settings.card_text_color | default: '#ffffff' }};
     opacity: 0;
     transform: translateY(6px);
     transition: opacity 0.35s ease, transform 0.35s ease;
@@ -94,25 +94,6 @@
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-  }
-  #shopify-section-{{ section.id }} .gn-golf-feed__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin: 0 0 14px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.18);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    font-size: 0.78rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  #shopify-section-{{ section.id }} .gn-golf-feed__badge svg {
-    width: 13px;
-    height: 13px;
-    flex: 0 0 auto;
   }
   #shopify-section-{{ section.id }} .gn-golf-feed__title {
     margin: 0 0 8px;
@@ -175,12 +156,6 @@
               {%- endif -%}
             </div>
             <div class="gn-golf-feed__overlay">
-              {%- if block.settings.badge_text != blank -%}
-                <span class="gn-golf-feed__badge">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                  {{ block.settings.badge_text }}
-                </span>
-              {%- endif -%}
               {%- if block.settings.title != blank -%}
                 <h3 class="gn-golf-feed__title">
                   {%- if block.settings.link != blank -%}
@@ -247,6 +222,7 @@
     { "type": "header", "content": "Colors" },
     { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
     { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#464646" },
+    { "type": "color", "id": "card_text_color", "label": "Card text color (title & description)", "default": "#ffffff" },
     { "type": "color", "id": "accent_color", "label": "Arrow button color", "default": "#1d3d2a" },
     { "type": "color", "id": "divider_color", "label": "Card placeholder color", "default": "#e8e9e6" },
     { "type": "header", "content": "Layout" },
@@ -261,7 +237,6 @@
       "name": "Card",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Image" },
-        { "type": "text", "id": "badge_text", "label": "Badge text", "default": "5m read" },
         { "type": "text", "id": "title", "label": "Title", "default": "Article title" },
         { "type": "textarea", "id": "description", "label": "Description", "default": "Short teaser description." },
         { "type": "url", "id": "link", "label": "Link" }
@@ -275,7 +250,6 @@
         {
           "type": "card",
           "settings": {
-            "badge_text": "5m read",
             "title": "The Best Part of Golf Isn't the Score",
             "description": "Why the moments between shots often matter more than the number on the card."
           }
@@ -283,7 +257,6 @@
         {
           "type": "card",
           "settings": {
-            "badge_text": "4m read",
             "title": "Building a Pre-Round Routine That Actually Works",
             "description": "Five minutes at the mat can change your entire round."
           }
@@ -291,7 +264,6 @@
         {
           "type": "card",
           "settings": {
-            "badge_text": "3m read",
             "title": "Why Clean Clubs Change Your Contact",
             "description": "A dirty face costs you more spin and distance than you think."
           }
@@ -299,7 +271,6 @@
         {
           "type": "card",
           "settings": {
-            "badge_text": "6m read",
             "title": "Practice Reps vs. Real Rounds: What Actually Transfers",
             "description": "The drills that translate to the course, and the ones that don't."
           }
