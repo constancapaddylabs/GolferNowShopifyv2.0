@@ -100,6 +100,7 @@
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 700;
+    color: inherit;
   }
   #shopify-section-{{ section.id }} .gn-golf-feed__title a {
     color: inherit;
@@ -134,7 +135,7 @@
   <div class="gn-golf-feed__wrap">
     <div class="gn-golf-feed__header">
       {%- if section.settings.heading != blank -%}
-        <p class="gn-golf-feed__heading">{{ section.settings.heading }}</p>
+        <h2 class="gn-golf-feed__heading">{{ section.settings.heading }}</h2>
       {%- endif -%}
       <div class="gn-golf-feed__nav">
         <button type="button" class="gn-golf-feed__arrow" data-direction="prev" aria-label="Previous">

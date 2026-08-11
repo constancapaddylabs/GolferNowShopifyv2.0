@@ -73,8 +73,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 14px;
-    height: {{ section.settings.image_height | default: 150 }}px;
+    height: {{ section.settings.image_height | default: 220 }}px;
     margin: 0 0 22px;
   }
   #shopify-section-{{ section.id }} .gn-bundles__images img {
@@ -145,13 +144,9 @@
           {%- endif -%}
           <p class="gn-bundles__subtitle">{{ block.settings.subtitle }}</p>
           <div class="gn-bundles__images">
-            {%- for i in (1..4) -%}
-              {%- assign img_key = 'image_' | append: i -%}
-              {%- assign img = block.settings[img_key] -%}
-              {%- if img != blank -%}
-                {{ img | image_url: width: 300 | image_tag: loading: 'lazy' }}
-              {%- endif -%}
-            {%- endfor -%}
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy' }}
+            {%- endif -%}
           </div>
           {%- if block.settings.button_text != blank -%}
             <a href="{{ block.settings.button_link | default: '#' }}" class="gn-bundles__link">
@@ -179,7 +174,7 @@
     { "type": "color", "id": "divider_color", "label": "Divider line color", "default": "#d2d3cc" },
     { "type": "color", "id": "highlight_border_color", "label": "Highlighted border / badge color", "default": "#ec7901" },
     { "type": "header", "content": "Layout" },
-    { "type": "range", "id": "image_height", "min": 80, "max": 260, "step": 10, "unit": "px", "label": "Image height", "default": 150 },
+    { "type": "range", "id": "image_height", "min": 80, "max": 420, "step": 10, "unit": "px", "label": "Image height", "default": 220 },
     { "type": "range", "id": "heading_spacing", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Space below heading", "default": 48 },
     { "type": "range", "id": "padding_top", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Top padding", "default": 60 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Bottom padding", "default": 70 }
@@ -193,11 +188,8 @@
         { "type": "text", "id": "badge_text", "label": "Badge text", "default": "Recommended" },
         { "type": "text", "id": "title", "label": "Title", "default": "TIER NAME" },
         { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "What's included." },
-        { "type": "header", "content": "Images (up to 4)" },
-        { "type": "image_picker", "id": "image_1", "label": "Image 1" },
-        { "type": "image_picker", "id": "image_2", "label": "Image 2" },
-        { "type": "image_picker", "id": "image_3", "label": "Image 3" },
-        { "type": "image_picker", "id": "image_4", "label": "Image 4" },
+        { "type": "header", "content": "Image" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
         { "type": "header", "content": "Link" },
         { "type": "text", "id": "button_text", "label": "Link label", "default": "Explore" },
         { "type": "url", "id": "button_link", "label": "Link URL" }
