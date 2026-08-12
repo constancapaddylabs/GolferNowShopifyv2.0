@@ -365,7 +365,6 @@
     },
     "gn_sync_test_8RYXP6": {
       "type": "gn-sync-test",
-      "disabled": true,
       "name": "Practice system showcase",
       "settings": {
         "eyebrow_text": "The practice system",
@@ -427,7 +426,6 @@
         "tier_9BpNGz",
         "tier_F4BnxD"
       ],
-      "disabled": true,
       "name": "Bundle comparison",
       "settings": {
         "heading": "Choose your system.",
