@@ -1,22 +1,29 @@
 <style>
   #shopify-section-{{ section.id }} .gn-story {
-    background: {{ section.settings.background_color | default: '#ffffff' }};
-    padding: {{ section.settings.padding_top | default: 60 }}px 32px {{ section.settings.padding_bottom | default: 60 }}px;
+    background: {{ section.settings.box_color | default: '#f7f5ef' }};
+    padding: {{ section.settings.padding_top | default: 60 }}px 0 {{ section.settings.padding_bottom | default: 60 }}px;
   }
   #shopify-section-{{ section.id }} .gn-story__box {
-    max-width: 1280px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(300px, 460px) 1fr;
     align-items: center;
     gap: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: {{ section.settings.box_color | default: '#f7f5ef' }};
     min-height: {{ section.settings.min_height | default: 420 }}px;
   }
+  #shopify-section-{{ section.id }} .gn-story__box--reversed {
+    grid-template-columns: 1fr minmax(300px, 460px);
+  }
+  #shopify-section-{{ section.id }} .gn-story__box--reversed .gn-story__content {
+    order: 2;
+    padding: 40px max(40px, calc((100vw - 1320px) / 2 + 40px)) 40px 8px;
+  }
+  #shopify-section-{{ section.id }} .gn-story__box--reversed .gn-story__media {
+    order: 1;
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) {{ section.settings.fade_amount | default: 22 }}%);
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) {{ section.settings.fade_amount | default: 22 }}%);
+  }
   #shopify-section-{{ section.id }} .gn-story__content {
-    padding: 40px 8px 40px 40px;
+    padding: 40px 8px 40px max(40px, calc((100vw - 1320px) / 2 + 40px));
   }
   #shopify-section-{{ section.id }} .gn-story__eyebrow {
     margin: 0 0 12px;
@@ -86,9 +93,18 @@
     display: block;
   }
   @media (max-width: 900px) {
-    #shopify-section-{{ section.id }} .gn-story__box {
+    #shopify-section-{{ section.id }} .gn-story__box,
+    #shopify-section-{{ section.id }} .gn-story__box--reversed {
       grid-template-columns: 1fr;
-      border-radius: 14px;
+    }
+    #shopify-section-{{ section.id }} .gn-story__box--reversed .gn-story__content {
+      order: 0;
+      padding: 32px 24px 0;
+    }
+    #shopify-section-{{ section.id }} .gn-story__box--reversed .gn-story__media {
+      order: 0;
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
     }
     #shopify-section-{{ section.id }} .gn-story__content {
       padding: 32px 24px 0;
@@ -108,7 +124,7 @@
 </style>
 
 <div class="gn-story">
-  <div class="gn-story__box">
+  <div class="gn-story__box{% if section.settings.reverse_layout %} gn-story__box--reversed{% endif %}">
     <div class="gn-story__content">
       {%- if section.settings.eyebrow_text != blank -%}
         <p class="gn-story__eyebrow">{{ section.settings.eyebrow_text }}</p>
@@ -155,13 +171,13 @@
     { "type": "text", "id": "button_text", "label": "Button label", "default": "Our method" },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "header", "content": "Media" },
+    { "type": "checkbox", "id": "reverse_layout", "label": "Show image on the left", "default": false },
     { "type": "paragraph", "content": "Add a video for a looping clip, or an image if you don't have one. Video takes priority when both are set." },
     { "type": "video", "id": "video", "label": "Video" },
     { "type": "image_picker", "id": "image", "label": "Image" },
     { "type": "range", "id": "fade_amount", "min": 0, "max": 60, "step": 2, "unit": "%", "label": "Fade-in amount (left edge)", "default": 22 },
     { "type": "header", "content": "Colors" },
-    { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
-    { "type": "color", "id": "box_color", "label": "Card background color", "default": "#f7f5ef" },
+    { "type": "color", "id": "box_color", "label": "Background color", "default": "#f7f5ef" },
     { "type": "color", "id": "heading_color", "label": "Heading color", "default": "#464646" },
     { "type": "color", "id": "text_color", "label": "Description text color", "default": "#767671" },
     { "type": "color", "id": "accent_color", "label": "Accent color (eyebrow, rule, button)", "default": "#ec7901" },
