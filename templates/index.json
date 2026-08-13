@@ -177,10 +177,10 @@
             "hours": 0,
             "minutes": 0,
             "seconds": 0,
-            "heading_text_link": "#1D3D2A",
-            "heading_text_link_hover": "#4D846E",
-            "color_desc": "#1D3D2A",
-            "color_desc_hover": "#4D846E",
+            "heading_text_link": "#1d3d2a",
+            "heading_text_link_hover": "#4d846e",
+            "color_desc": "#1d3d2a",
+            "color_desc_hover": "#4d846e",
             "color_countdown": "#ffffff",
             "show_button_bg": true,
             "color_button": "rgba(0,0,0,0)",
@@ -558,6 +558,26 @@
         "padding_bottom": 70
       }
     },
+    "gn_story_banner_ehbzpN": {
+      "type": "gn-story-banner",
+      "name": "Story banner",
+      "settings": {
+        "eyebrow_text": "Our story",
+        "heading": "We built Golfer Now because practice should teach you something.",
+        "description": "Golf is hard enough. Practice shouldn't be guesswork. We design tools that give you clear feedback so every rep has a purpose, and every session moves you forward.\n\nGolfer Now is dedicated to providing golfers and outdoor enthusiasts with quality products, competitive prices, and a secure shopping experience. As part of Zinetic LLC, we're committed to delivering exceptional customer service.",
+        "button_text": "Our method",
+        "button_link": "",
+        "video": "shopify://files/videos/videoaboutus.mov",
+        "fade_amount": 22,
+        "box_color": "#f7f5ef",
+        "heading_color": "#464646",
+        "text_color": "#767671",
+        "accent_color": "#1D3D2A",
+        "min_height": 420,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "media_about_gn": {
       "type": "media-with-text",
       "blocks": {
@@ -916,6 +936,7 @@
     "gn_flagship_trainer_banner_PeGFNi",
     "gn_sync_test_8RYXP6",
     "gn_bundle_comparison_4iyWbm",
+    "gn_story_banner_ehbzpN",
     "media_about_gn",
     "media_story_gn",
     "media_parallax_gn",
