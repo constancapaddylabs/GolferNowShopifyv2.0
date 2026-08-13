@@ -151,7 +151,7 @@
             "btn_min_height_mobile": 40,
             "btn_wide_width": 300,
             "roundness_button": 20,
-            "heading_size_px": 64,
+            "heading_size_px": 70,
             "heading_size_px_tablet": 40,
             "heading_size_px_mobile": 45,
             "hover_underline": false,
