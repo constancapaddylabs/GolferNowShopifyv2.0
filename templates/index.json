@@ -574,8 +574,8 @@
         "text_color": "#767671",
         "accent_color": "#1D3D2A",
         "min_height": 420,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 65,
+        "padding_bottom": 65
       }
     },
     "media_about_gn": {
@@ -625,6 +625,7 @@
         "richtext_about",
         "button_about"
       ],
+      "disabled": true,
       "custom_css": [
         ".page-width {padding-left: 80px !important; padding-right: 80px !important;}"
       ],
@@ -642,8 +643,8 @@
         "url": "shopify://collections/all",
         "show_lines": false,
         "lines_width": "fullwidth",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#f7f5ef",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -730,6 +731,7 @@
         "richtext_story",
         "button_story"
       ],
+      "disabled": true,
       "custom_css": [
         ".page-width {padding-left: 80px !important; padding-right: 80px !important;}"
       ],
@@ -812,7 +814,7 @@
         "richtext_tour"
       ],
       "settings": {
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default",
         "align_content": "center",
         "text_align": "text-center",
