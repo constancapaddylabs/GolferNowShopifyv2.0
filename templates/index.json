@@ -343,73 +343,6 @@
         "color_media_dots": "rgba(0,0,0,0)"
       }
     },
-    "gn_flagship_trainer_banner_PeGFNi": {
-      "type": "gn-flagship-trainer-banner",
-      "blocks": {
-        "feature_4Pm4pg": {
-          "type": "feature",
-          "settings": {
-            "icon": "sound",
-            "title": "Audible feedback",
-            "description": "The click confirms correct sequence."
-          }
-        },
-        "feature_bg4iKr": {
-          "type": "feature",
-          "settings": {
-            "icon": "check",
-            "title": "Feature title",
-            "description": "Feature description."
-          }
-        },
-        "feature_D6Xadk": {
-          "type": "feature",
-          "settings": {
-            "icon": "chart",
-            "title": "Immediate data",
-            "description": "Feel it right away. Adjust faster."
-          }
-        },
-        "feature_CPHFez": {
-          "type": "feature",
-          "settings": {
-            "icon": "check",
-            "title": "Built for repetition",
-            "description": "Durable, balanced and tour tough."
-          }
-        }
-      },
-      "block_order": [
-        "feature_4Pm4pg",
-        "feature_bg4iKr",
-        "feature_D6Xadk",
-        "feature_CPHFez"
-      ],
-      "custom_css": [
-        ".gn-flagship-banner {padding-left: 100px; padding-right: 100px;}"
-      ],
-      "name": "Flagship trainer banner",
-      "settings": {
-        "eyebrow_text": "Our flagship trainer",
-        "heading": "ARC ONE",
-        "subheading": "Hear the moment sequence becomes release.",
-        "image": "shopify://shop_images/Firefly.png",
-        "enable_pulse": true,
-        "pulse_speed": 2.5,
-        "background_image": "shopify://shop_images/pexels-anntarazevich-6370119.jpg",
-        "overlay_opacity": 85,
-        "button_text": "Shop ARC ONE",
-        "button_link": "",
-        "secondary_text": "",
-        "secondary_link": "",
-        "background_color": "#1d3d2a",
-        "accent_color": "#4d846e",
-        "text_color": "#f5f3ec",
-        "min_height": 520,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "gn_method_steps_yrATw8": {
       "type": "gn-method-steps",
       "blocks": {
@@ -478,6 +411,73 @@
         "heading_spacing": 56,
         "padding_top": 70,
         "padding_bottom": 70
+      }
+    },
+    "gn_flagship_trainer_banner_PeGFNi": {
+      "type": "gn-flagship-trainer-banner",
+      "blocks": {
+        "feature_4Pm4pg": {
+          "type": "feature",
+          "settings": {
+            "icon": "sound",
+            "title": "Audible feedback",
+            "description": "The click confirms correct sequence."
+          }
+        },
+        "feature_bg4iKr": {
+          "type": "feature",
+          "settings": {
+            "icon": "check",
+            "title": "Feature title",
+            "description": "Feature description."
+          }
+        },
+        "feature_D6Xadk": {
+          "type": "feature",
+          "settings": {
+            "icon": "chart",
+            "title": "Immediate data",
+            "description": "Feel it right away. Adjust faster."
+          }
+        },
+        "feature_CPHFez": {
+          "type": "feature",
+          "settings": {
+            "icon": "check",
+            "title": "Built for repetition",
+            "description": "Durable, balanced and tour tough."
+          }
+        }
+      },
+      "block_order": [
+        "feature_4Pm4pg",
+        "feature_bg4iKr",
+        "feature_D6Xadk",
+        "feature_CPHFez"
+      ],
+      "custom_css": [
+        ".gn-flagship-banner {padding-left: 100px; padding-right: 100px;}"
+      ],
+      "name": "Flagship trainer banner",
+      "settings": {
+        "eyebrow_text": "Our flagship trainer",
+        "heading": "ARC ONE",
+        "subheading": "Hear the moment sequence becomes release.",
+        "image": "shopify://shop_images/Firefly.png",
+        "enable_pulse": true,
+        "pulse_speed": 2.5,
+        "background_image": "shopify://shop_images/pexels-anntarazevich-6370119.jpg",
+        "overlay_opacity": 85,
+        "button_text": "Shop ARC ONE",
+        "button_link": "",
+        "secondary_text": "",
+        "secondary_link": "",
+        "background_color": "#1d3d2a",
+        "accent_color": "#4d846e",
+        "text_color": "#f5f3ec",
+        "min_height": 520,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "gn_sync_test_8RYXP6": {
@@ -912,8 +912,8 @@
     "slider_playbetter_gn",
     "slider_HMRLGp",
     "text_icons1_gn",
-    "gn_flagship_trainer_banner_PeGFNi",
     "gn_method_steps_yrATw8",
+    "gn_flagship_trainer_banner_PeGFNi",
     "gn_sync_test_8RYXP6",
     "gn_bundle_comparison_4iyWbm",
     "media_about_gn",
