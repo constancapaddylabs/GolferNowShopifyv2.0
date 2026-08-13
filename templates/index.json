@@ -173,6 +173,7 @@
         "item_fishing",
         "item_outdoor"
       ],
+      "disabled": true,
       "settings": {
         "main_subheading": "",
         "main_heading": "",
@@ -794,8 +795,8 @@
   "order": [
     "slider_playbetter_gn",
     "text_icons1_gn",
-    "gn_method_steps_yrATw8",
     "gn_flagship_trainer_banner_PeGFNi",
+    "gn_method_steps_yrATw8",
     "gn_sync_test_8RYXP6",
     "gn_bundle_comparison_4iyWbm",
     "media_about_gn",
