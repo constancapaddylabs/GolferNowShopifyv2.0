@@ -88,7 +88,6 @@
       "block_order": [
         "banner_playbetter1"
       ],
-      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "page-fullwidth",
@@ -204,6 +203,7 @@
       "block_order": [
         "banner_qw3mAg"
       ],
+      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "page-fullwidth",
