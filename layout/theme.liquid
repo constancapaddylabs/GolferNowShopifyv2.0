@@ -251,7 +251,7 @@
       {%- section 'cart-drawer' -%}
     {%- endif -%}
 
-    {%- if template.name == "index" or template.name == "collection" -%}
+    {%- if template.name == "index" -%}
     {%- if settings.fixed_header_on_index or settings.fixed_header_on_index_mobile -%}
     <fixed-headergroup class="fixed-header-group"
                        {% if settings.fixed_header_on_index %} data-transparent-desktop="true"{%- endif -%}
@@ -259,6 +259,10 @@
     {%- endif -%}
     {%- sections 'header-group' -%}
     {%- if settings.fixed_header_on_index or settings.fixed_header_on_index_mobile -%}</fixed-headergroup>{%- endif -%}
+    {%- elsif template.name == "collection" -%}
+    <fixed-headergroup class="fixed-header-group" data-transparent-desktop="true" data-transparent-mobile="true">
+    {%- sections 'header-group' -%}
+    </fixed-headergroup>
     {%- else -%}
     {%- sections 'header-group' -%}
     {%- endif -%}
