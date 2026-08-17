@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "hero": {
+      "type": "gn-contact-hero",
+      "settings": {
+        "eyebrow_text": "Get in touch",
+        "heading": "We're here to help.",
+        "description": "Questions about an order, a product, or your practice routine? Send us a message and we'll get back to you within one business day.",
+        "background_color": "#1d3d2a",
+        "text_color": "#ffffff",
+        "accent_color": "#ec7901",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false,
+        "heading_aligment": "text-center",
+        "top_spacing": "none",
+        "width": "default",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "show_parallax": false,
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": true
+      }
+    },
+    "form": {
+      "type": "gn-contact-form",
+      "blocks": {
+        "info_email": {
+          "type": "info",
+          "settings": {
+            "icon": "mail",
+            "label": "Email",
+            "value": "support@golfernow.com",
+            "link": "mailto:support@golfernow.com"
+          }
+        },
+        "info_phone": {
+          "type": "info",
+          "settings": {
+            "icon": "phone",
+            "label": "Phone",
+            "value": "(555) 555-1002",
+            "link": "tel:5555551002"
+          }
+        },
+        "info_hours": {
+          "type": "info",
+          "settings": {
+            "icon": "clock",
+            "label": "Hours",
+            "value": "Mon–Fri, 9:00 AM – 5:00 PM"
+          }
+        }
+      },
+      "block_order": ["info_email", "info_phone", "info_hours"],
+      "settings": {
+        "info_heading": "Contact information",
+        "info_description": "Prefer to reach us directly? Use any of the details below.",
+        "submit_label": "Send message",
+        "background_color": "#f7f5ef",
+        "heading_color": "#464646",
+        "text_color": "#767671",
+        "accent_color": "#ec7901",
+        "border_color": "#d2d3cc",
+        "padding_top": 70,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": ["hero", "main", "form"]
+}
