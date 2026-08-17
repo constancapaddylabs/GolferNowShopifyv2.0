@@ -23,6 +23,10 @@
     --description-box-opacity:{{ section.settings.box_opacity | divided_by: 100.00 }};
     {%- endif -%}
   }
+  #theme-section-{{ section.id }} .main-collection-banner__content h1{
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+  }
   @media (min-width:577px){
     #theme-section-{{ section.id }} .main-collection-banner__content{
       max-width: {{ section.settings.description_width }}%;
