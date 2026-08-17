@@ -251,7 +251,7 @@
       {%- section 'cart-drawer' -%}
     {%- endif -%}
 
-    {%- if template.name == "index" -%}
+    {%- if template.name == "index" or template.name == "collection" -%}
     {%- if settings.fixed_header_on_index or settings.fixed_header_on_index_mobile -%}
     <fixed-headergroup class="fixed-header-group"
                        {% if settings.fixed_header_on_index %} data-transparent-desktop="true"{%- endif -%}
