@@ -291,8 +291,9 @@
     "color_meta_products_hover": "rgba(0,0,0,0)",
     "color_product_name": "rgba(0,0,0,0)",
     "color_product_name_hover": "rgba(0,0,0,0)",
-    "color_save_price": "#00b04d",
-    "color_save_badge": "#00b04d",
+    "color_price": "#1d3d2a",
+    "color_save_price": "#1d3d2a",
+    "color_save_badge": "#1d3d2a",
     "color_featured_badge": "#1d3d2a",
     "color_interface_button": "#ffffff",
     "color_interface_button_text": "rgba(0,0,0,0)",
@@ -346,6 +347,7 @@
     "enable_compare": false,
     "page_compare": "compare",
     "favicon": "shopify://shop_images/golverfavi_152ecfbc-b21c-4e00-b2c9-f59068d497f2.png",
+    "enable_rating": true,
     "show_number_rating": true,
     "enable_breadcrumb": true,
     "background_width_breadcrumb": "fullwidth",
@@ -423,8 +425,7 @@
         "disabled": false,
         "settings": {}
       }
-    },
-    "enable_rating": true
+    }
   },
   "platform_customizations": {
     "custom_css": [
