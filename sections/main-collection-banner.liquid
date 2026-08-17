@@ -160,8 +160,9 @@
   
     <div class="page-grid-1 main-collection-banner__top-center{% if section.settings.text_align == "text-center" %} main-collection-banner__left-center{% endif %} main-collection-banner__height main-collection-banner__height_mobile {{ section.settings.text_align }}">
       <div class="main-collection-banner__content">
-        <h1 class="mt0 mb0">{{ collection.title }}</h1>
-        {%- if collection.description != blank and section.settings.show_text_description -%}<div class="mt16 section__richtext__editor">{{ collection.description }}</div>{%- endif -%}
+        <h1 class="mt0 mb0">{{ section.settings.custom_heading | default: collection.title }}</h1>
+        {%- assign banner_description = section.settings.custom_description | default: collection.description -%}
+        {%- if banner_description != blank and section.settings.show_text_description -%}<div class="mt16 section__richtext__editor">{{ banner_description }}</div>{%- endif -%}
       </div>
     </div>
 
@@ -174,6 +175,22 @@
   "name": "Collection heading",
   "tag": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "custom_heading",
+      "label": "Custom heading",
+      "info": "Leave blank to use the collection's title automatically. Useful for the \"All products\" page, which has no editable title in the admin."
+    },
+    {
+      "type": "richtext",
+      "id": "custom_description",
+      "label": "Custom description",
+      "info": "Leave blank to use the collection's description automatically."
+    },
     {
       "type": "header",
       "content": "Layout"
