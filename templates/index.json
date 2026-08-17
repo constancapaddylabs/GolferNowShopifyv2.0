@@ -567,12 +567,13 @@
         "description": "Golf is hard enough. Practice shouldn't be guesswork. We design tools that give you clear feedback so every rep has a purpose, and every session moves you forward.\n\nGolfer Now is dedicated to providing golfers and outdoor enthusiasts with quality products, competitive prices, and a secure shopping experience. As part of Zinetic LLC, we're committed to delivering exceptional customer service.",
         "button_text": "Our method",
         "button_link": "",
+        "reverse_layout": false,
         "video": "shopify://files/videos/videoaboutus.mov",
         "fade_amount": 22,
         "box_color": "#f7f5ef",
         "heading_color": "#464646",
         "text_color": "#767671",
-        "accent_color": "#1D3D2A",
+        "accent_color": "#1d3d2a",
         "min_height": 420,
         "padding_top": 65,
         "padding_bottom": 65
@@ -813,6 +814,7 @@
         "heading_tour",
         "richtext_tour"
       ],
+      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "default",
@@ -915,6 +917,7 @@
         "card_qbbtny",
         "card_RVwDH7"
       ],
+      "disabled": true,
       "name": "Golf content feed",
       "settings": {
         "heading": "Stay up-to-date with everything about golf and better practice.",
