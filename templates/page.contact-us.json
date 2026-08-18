@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "contact": {
@@ -72,13 +81,13 @@
       "settings": {
         "eyebrow_text": "Get in touch",
         "heading": "We're here to help.",
-        "description": "Have a question about our products, your order, or training in general? We'd love to hear from you.",
+        "description": "Have a question about our products or your order? We'd love to hear from you.",
         "submit_label": "Send message",
         "background_color": "#f7f5ef",
         "text_color": "#1a1a1a",
         "description_color": "#5c5c56",
         "icon_color": "#1a1a1a",
-        "accent_color": "#1D3D2A",
+        "accent_color": "#1d3d2a",
         "border_color": "#c9c6ba",
         "steps_spacing": 56,
         "header_spacing": 56,
@@ -132,7 +141,14 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6"],
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
       "settings": {
         "heading": "Frequently asked questions",
         "background_color": "#f7f5ef",
@@ -147,5 +163,8 @@
       }
     }
   },
-  "order": ["contact", "faq"]
+  "order": [
+    "contact",
+    "faq"
+  ]
 }
