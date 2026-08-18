@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "contact": {
@@ -5,6 +14,7 @@
       "blocks": {
         "step_1": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "number": "1",
             "title": "Tell us what's up",
@@ -13,6 +23,7 @@
         },
         "step_2": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "number": "2",
             "title": "We take a look",
@@ -21,6 +32,7 @@
         },
         "step_3": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "number": "3",
             "title": "Get your answer",
@@ -53,11 +65,19 @@
             "icon": "marker",
             "label": "Our HQ",
             "line1": "123 Fairway Drive",
-            "line2": "Carlsbad, CA 92008, USA"
+            "line2": "Carlsbad, CA 92008, USA",
+            "link": ""
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3", "info_email", "info_phone", "info_hq"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "info_email",
+        "info_phone",
+        "info_hq"
+      ],
       "settings": {
         "eyebrow_text": "Get in touch",
         "heading": "We're here to help.",
@@ -67,7 +87,7 @@
         "text_color": "#1a1a1a",
         "description_color": "#5c5c56",
         "icon_color": "#1a1a1a",
-        "accent_color": "#ec7901",
+        "accent_color": "#1D3D2A",
         "border_color": "#c9c6ba",
         "steps_spacing": 56,
         "header_spacing": 56,
@@ -76,5 +96,7 @@
       }
     }
   },
-  "order": ["contact"]
+  "order": [
+    "contact"
+  ]
 }
