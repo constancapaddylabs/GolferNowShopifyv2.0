@@ -164,6 +164,41 @@
       display:none;
     }
   }
+
+  /* Use the "Filters" drawer button on all screen sizes instead of the always-visible sidebar */
+  #theme-section-{{ section.id }} .hide-st.facet-filters-form{
+    display:none!important;
+  }
+  @media (min-width:1025px){
+    #theme-section-{{ section.id }} .mobile-facets{
+      display:block!important;
+    }
+    #theme-section-{{ section.id }} [class*="page-grid-"].page-grid__collection-sidebar>.product-grid__container{
+      max-width:100%!important;
+    }
+  }
+  #theme-section-{{ section.id }} .mobile-facets__button{
+    color:var(--color-base, #1a1a1a);
+    font-weight:600;
+  }
+  #theme-section-{{ section.id }} .mobile-facets__button svg path{
+    fill:var(--color-base, #1a1a1a);
+  }
+  #theme-section-{{ section.id }} .sorting .field{
+    height:44px;
+    border-radius:999px;
+    background:var(--color-secondary-background, #f0efe9);
+  }
+  #theme-section-{{ section.id }} .sorting .field__input{
+    border:none;
+    background:transparent;
+    padding-left:18px;
+    padding-right:34px;
+    font-weight:600;
+  }
+  #theme-section-{{ section.id }} .sorting .field__icon--select{
+    right:16px;
+  }
 </style>
 
 {%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
