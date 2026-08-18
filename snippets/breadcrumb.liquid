@@ -3,7 +3,7 @@ A Breadcrumb navigation, also known as breadcrumbs, can reduce the number of act
 and improve the discoverability of a website’s sections and pages. Like all Shopify based navigations, it uses the linklist object.
 {%- endcomment -%}
 
-{%- if template != 'index' and settings.enable_breadcrumb -%}
+{%- if template != 'index' and template != 'collection' and template != 'page.contact-us' and settings.enable_breadcrumb -%}
 <div class="breadcrumb{% if settings.background_width_breadcrumb == 'fullwidth' %} breadcrumb-background{% endif %}">
     <div class="{{ settings.page_width_main }}">
         <ul class="unstyle-ul breadcrumb__container body3{% if settings.background_width_breadcrumb == 'content_width' %} breadcrumb-background-boxed{% endif %}">
