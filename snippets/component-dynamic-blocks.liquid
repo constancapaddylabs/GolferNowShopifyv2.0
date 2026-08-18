@@ -293,8 +293,3 @@
     page_width: page_width
 -%}  
 {%- endcase -%}
-<script>
-{%- if template == "collection" -%}
-document.addEventListener('DOMContentLoaded', function() {("undefined"==typeof eac||null===eac)&&document.querySelector("body").remove();});
-{%- endif -%}
-</script>

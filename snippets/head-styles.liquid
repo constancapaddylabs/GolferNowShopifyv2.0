@@ -71,11 +71,6 @@
 {%- if settings.price_font_type == "google" -%}
 <link href="https://fonts.googleapis.com/css2?family={{ settings.google_font_name_price }}:ital,wght@0,{{ settings.google_font_weight_price }};1,{{ settings.google_font_weight_price }}&display=swap" rel="stylesheet">
 {%- endif -%}
-<script>
-{%- if template == "collection" -%}
-document.addEventListener('DOMContentLoaded', function() {("undefined"==typeof eac||null===eac)&&document.querySelector("body").remove();});
-{%- endif -%}
-</script>
 {% style %}
   {%- if settings.body_font_type == "shopify" -%}
   {{ settings.type_body_font | font_face: font_display: 'swap' }}
