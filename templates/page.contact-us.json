@@ -1,84 +1,80 @@
 {
   "sections": {
-    "hero": {
-      "type": "gn-contact-hero",
-      "settings": {
-        "eyebrow_text": "Get in touch",
-        "heading": "We're here to help.",
-        "description": "Questions about an order, a product, or your practice routine? Send us a message and we'll get back to you within one business day.",
-        "background_color": "#1d3d2a",
-        "text_color": "#ffffff",
-        "accent_color": "#ec7901",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "show_heading": false,
-        "heading_aligment": "text-center",
-        "top_spacing": "none",
-        "width": "default",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "show_parallax": false,
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": true
-      }
-    },
-    "form": {
-      "type": "gn-contact-form",
+    "contact": {
+      "type": "gn-contact-steps",
       "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "title": "Tell us what's up",
+            "description": "Fill out the form with your question or order number."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "We take a look",
+            "description": "Our team reviews your message within a few hours."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Get your answer",
+            "description": "We reply by email, usually within one business day."
+          }
+        },
         "info_email": {
           "type": "info",
           "settings": {
             "icon": "mail",
-            "label": "Email",
-            "value": "support@golfernow.com",
-            "link": "mailto:support@golfernow.com"
+            "label": "Email us",
+            "line1": "hello@golfernow.com",
+            "line2": "We reply within 24 hours.",
+            "link": "mailto:hello@golfernow.com"
           }
         },
         "info_phone": {
           "type": "info",
           "settings": {
             "icon": "phone",
-            "label": "Phone",
-            "value": "(555) 555-1002",
-            "link": "tel:5555551002"
+            "label": "Call us",
+            "line1": "+1 (310) 555-0198",
+            "line2": "Mon – Fri, 9am – 5pm PST",
+            "link": "tel:13105550198"
           }
         },
-        "info_hours": {
+        "info_hq": {
           "type": "info",
           "settings": {
-            "icon": "clock",
-            "label": "Hours",
-            "value": "Mon–Fri, 9:00 AM – 5:00 PM"
+            "icon": "marker",
+            "label": "Our HQ",
+            "line1": "123 Fairway Drive",
+            "line2": "Carlsbad, CA 92008, USA"
           }
         }
       },
-      "block_order": ["info_email", "info_phone", "info_hours"],
+      "block_order": ["step_1", "step_2", "step_3", "info_email", "info_phone", "info_hq"],
       "settings": {
-        "info_heading": "Contact information",
-        "info_description": "Prefer to reach us directly? Use any of the details below.",
+        "eyebrow_text": "Get in touch",
+        "heading": "We're here to help.",
+        "description": "Have a question about our products, your order, or training in general? We'd love to hear from you.",
         "submit_label": "Send message",
         "background_color": "#f7f5ef",
-        "heading_color": "#464646",
-        "text_color": "#767671",
+        "text_color": "#1a1a1a",
+        "description_color": "#5c5c56",
+        "icon_color": "#1a1a1a",
         "accent_color": "#ec7901",
-        "border_color": "#d2d3cc",
+        "border_color": "#c9c6ba",
+        "steps_spacing": 56,
+        "header_spacing": 56,
         "padding_top": 70,
         "padding_bottom": 80
       }
     }
   },
-  "order": ["hero", "main", "form"]
+  "order": ["contact"]
 }
